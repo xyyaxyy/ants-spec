@@ -18,6 +18,6 @@ npm install ants-spec-markdownlint markdownlint --save-dev
 
 ```json
 {
-	"extends": "ants-spec-markdownlint"
+  "extends": "ants-spec-markdownlint"
 }
 ```

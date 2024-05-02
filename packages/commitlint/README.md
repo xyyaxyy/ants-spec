@@ -1,6 +1,6 @@
 # ants-spec-commitlint
 
-> ants Git提交规范
+> ants Git 提交规范
 
 支持配套的 [commitlint 配置](https://commitlint.js.org/#/concepts-shareable-config)，用于对 `git commit message` 进行校验。
 
@@ -18,7 +18,7 @@ npm install ants-spec-commitlint @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-	extends: ['ants-spec-commitlint'],
+  extends: ["ants-spec-commitlint"],
 };
 ```
 
@@ -33,11 +33,12 @@ pnpm add --save-dev husky
 ```
 
 husky init
+
 ```bash
 pnpm exec husky init
 ```
 
-然后在 .husky目录下 创建 `commit-msg` 文件
+然后在 .husky 目录下 创建 `commit-msg` 文件
 
 ```
 #!/usr/bin/env sh
