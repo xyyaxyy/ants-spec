@@ -1,6 +1,6 @@
 {
   "name": "ants-spec-markdownlint",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.json",
   "description": "ants 文档规范",
   "keywords": [
