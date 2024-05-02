@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "ants-docs-spec"
   text: "ants--前端编码规范"
-  tagline: version 0.0.5
+  tagline: version 0.0.6
   actions:
     - theme: brand
       text: Markdown Examples
