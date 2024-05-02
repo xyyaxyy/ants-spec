@@ -29,13 +29,21 @@ module.exports = {
 首先安装 husky：
 
 ```bash
-npm install husky --save-dev
+pnpm add --save-dev husky
 ```
 
-然后执行添加`commit-msg`:
-
+husky init
 ```bash
-npx husky add .husky/commit-msg 'npx commitlint --edit $1'
+pnpm exec husky init
+```
+
+然后在 .husky目录下 创建 `commit-msg` 文件
+
+```
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npx --no -- commitlint --edit $1
 ```
 
 更多信息可参考 [commitlint 文档](https://commitlint.js.org/#/guides-local-setup?id=install-husky)。
