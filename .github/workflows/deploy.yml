@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout  ️
         uses: actions/checkout@v4
+        with:
+          lfs: true
 
       - name: lock npm version
         uses: actions/setup-node@v3
