@@ -1,0 +1,35 @@
+{
+  "name": "ants-spec",
+  "private": true,
+  "keywords": [
+    "ants",
+    "ants-spec",
+    "spec"
+  ],
+  "author": "xyyaxyy",
+  "license": "ISC",
+  "description": "ants--前端编码规范工程化",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky",
+    "init": "pnpm install",
+    "clean": "lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
+    "docs:dev": "pnpm --filter @apps/docs-spec docs:dev",
+    "docs:build": "pnpm --filter @apps/docs-spec docs:build",
+    "docs:preview": "pnpm --filter @apps/docs-spec docs:preview",
+    "deploy": "bash deploy.sh",
+    "publish": "lerna publish",
+    "lint": "markdownlint README.md",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "lerna": "^8.1.2",
+    "markdownlint": "^0.34.0"
+  }
+}

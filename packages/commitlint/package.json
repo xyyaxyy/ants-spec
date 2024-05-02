@@ -1,0 +1,24 @@
+{
+  "name": "ants-spec-commitlint",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "ants Git规范",
+  "keywords": [
+    "ants",
+    "commit",
+    "lint"
+  ],
+  "author": "xyyaxyy",
+  "homepage": "https://github.com/xyyaxyy/ants-spec#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyyaxyy/ants-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyyaxyy/ants-spec/issues"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^7.0.2"
+  }
+}

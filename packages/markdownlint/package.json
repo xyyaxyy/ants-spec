@@ -1,0 +1,24 @@
+{
+  "name": "ants-spec-markdownlint",
+  "version": "0.0.1",
+  "main": "index.json",
+  "description": "ants 文档规范",
+  "keywords": [
+    "ants",
+    "markdown",
+    "lint"
+  ],
+  "author": "xyyaxyy",
+  "homepage": "https://github.com/xyyaxyy/ants-spec#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xyyaxyy/ants-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xyyaxyy/ants-spec/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.34.0"
+  }
+}
