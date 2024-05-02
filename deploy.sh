@@ -10,7 +10,7 @@ dist_path=apps/docs-spec/.vitepress/dist
 push_branch=gh-pages
 
 # 生成静态文件
-npm run docs:build
+pnpm run docs:build
 
 # 进入生成的文件夹
 cd $dist_path
