@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "ants-docs-spce"
-  text: "ants--前端编码规范说明"
+  name: "ants-docs-spec"
+  text: "ants--前端编码规范"
   tagline: My great project tagline
   actions:
     - theme: brand
