@@ -18,7 +18,4 @@ features:
   - icon: ⚙️
     title: DNS安全防护
     details: 致力于研发DNS安全防护系统
-  - icon: 🗂️
-    title: HTTPDNS
-    details: 支持自定义HTTPDNS功能
 ---
