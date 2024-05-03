@@ -4,6 +4,10 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ants-docs-spce",
   description: "ants--前端编码规范说明",
+  // 最后更新时间
+  lastUpdated: true,
+  // 构建根路径
+  base: '/ants-spec/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
