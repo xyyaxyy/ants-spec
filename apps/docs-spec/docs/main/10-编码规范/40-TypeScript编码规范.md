@@ -12,7 +12,7 @@ author:
 # TypeScript 编码规范
 
 :::tip
-`TypeScript` 是微软开发的一款开源编程语言，它是 `JavaScript` 的超集，因此其编码规范和配套 `Lint` 工具也与[JavaScript 编码规范](./javascript.md)一脉相承。
+`TypeScript` 是微软开发的一款开源编程语言，它是 `JavaScript` 的超集，因此其编码规范和配套 `Lint` 工具也与[JavaScript 编码规范](./30-JavaScript编码规范.md)一脉相承。
 :::
 
 ## 编码风格
