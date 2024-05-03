@@ -2,6 +2,7 @@
   "name": "@apps/docs-spec",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
@@ -12,5 +13,11 @@
   "license": "ISC",
   "devDependencies": {
     "vitepress": "^1.1.4"
+  },
+  "dependencies": {
+    "directory-tree": "^3.5.1",
+    "markdown-it-custom-attrs": "^1.0.2",
+    "pagefind": "^1.1.0",
+    "vitepress-plugin-pagefind": "^0.2.14"
   }
 }

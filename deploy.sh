@@ -21,4 +21,5 @@ git commit -m "deploy, $commit_info"
 git push -f $push_addr HEAD:$push_branch
 
 cd -
+# 移除 dist 文件夹
 rm -rf $dist_path
