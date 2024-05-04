@@ -65,8 +65,8 @@ export default [
     text: '脚手架CLI',
     items: [
       {
-        text: 'ants-spec-cli',
-        link: '/docs/main/40-脚手架CLI/10-ants-spec-cli.md',
+        text: 'ants-spec-lint-cli',
+        link: '/docs/main/40-脚手架CLI/10-ants-spec-lint-cli.md',
       },
     ],
   },
