@@ -10,6 +10,7 @@
 
 ```bash
 npm install ants-spec-commitlint @commitlint/cli --save-dev
+pnpm add ants-spec-commitlint @commitlint/cli -D
 ```
 
 ## 使用

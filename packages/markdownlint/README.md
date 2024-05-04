@@ -10,6 +10,7 @@
 
 ```bash
 npm install ants-spec-markdownlint markdownlint --save-dev
+pnpm add ants-spec-markdownlint markdownlint -D
 ```
 
 ## 使用

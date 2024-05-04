@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["./packages/commitlint/index.js"],
+  extends: ['./packages/commitlint/index.js'],
 };

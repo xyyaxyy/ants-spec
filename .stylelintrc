@@ -1,0 +1,3 @@
+{
+  "extends": "./packages/stylelint/index.js"
+}

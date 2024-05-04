@@ -1,15 +1,15 @@
-import type { SidebarItem } from "vitepress/types";
+import type { SidebarItem } from 'vitepress/types';
 
 // 通过import 引入path
-import path from "path";
+import path from 'path';
 // 引入directory-tree
-import dirTree from "directory-tree";
+import dirTree from 'directory-tree';
 
-const srcPath = path.resolve(__dirname, "../docs");
+const srcPath = path.resolve(__dirname, '../docs');
 const srcDir = dirTree(srcPath, {
   extensions: /\.md/,
   normalizePath: true,
-  attributes: ["type", "extension"],
+  attributes: ['type', 'extension'],
   exclude: /node_modules/,
 });
 // console.log('srcDir', srcDir)
@@ -23,7 +23,7 @@ if (srcDir.children) {
   srcDir.children.forEach((item) => {
     const { type, name, children } = item;
     // 如果为目录
-    if (type === "directory") {
+    if (type === 'directory') {
       const sidebarRootPath = `/${docsRootName}/${name}/`;
       sideBarObj[sidebarRootPath] = genSidebar(children, sidebarRootPath, true);
     }
@@ -32,7 +32,7 @@ if (srcDir.children) {
 // console.log('sideBarObj', sideBarObj)
 
 // 递归生成侧边栏，需要返回一个对象数组, isTop = ture 为顶层目录
-function genSidebar(tree: any[], sidebarRootPath = "", isTop = false) {
+function genSidebar(tree: any[], sidebarRootPath = '', isTop = false) {
   if (!tree.length || !sidebarRootPath) return [];
   let sidebar: SidebarItem[] = [];
   tree.forEach((item) => {
@@ -44,11 +44,11 @@ function genSidebar(tree: any[], sidebarRootPath = "", isTop = false) {
     };
 
     // 如果为目录，这里默认目录为侧边栏，构建文档的时候需要注意：每个目录下面必须有一个index.md文件
-    if (type === "directory") {
+    if (type === 'directory') {
       // 顶层目录，只有名称，没有链接
       sidebar.push({
         // 去除数字前缀
-        text: name?.replace(/^\d+-/, ""),
+        text: name?.replace(/^\d+-/, ''),
         collapsed: !isTop,
         items: genSidebar(children, `${sidebarRootPath}${name}/`),
       });
@@ -56,10 +56,10 @@ function genSidebar(tree: any[], sidebarRootPath = "", isTop = false) {
     }
 
     // 如果为md文件
-    if (type === "file" && extension === ".md") {
+    if (type === 'file' && extension === '.md') {
       sidebar.push({
         // 去掉.md后缀、数字前缀
-        text: name.replace(/(^\d+-)|(\.md$)/g, ""),
+        text: name.replace(/(^\d+-)|(\.md$)/g, ''),
         link: `${sidebarRootPath}${name}`,
       });
     }
