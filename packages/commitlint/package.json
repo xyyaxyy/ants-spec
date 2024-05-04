@@ -1,6 +1,6 @@
 {
   "name": "ants-spec-commitlint",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "description": "ants Git规范",
   "keywords": [
