@@ -12,7 +12,7 @@ function isObject(obj) {
 }
 
 describe('Validate TS configs', () => {
-  it('Validate ants-spec-eslint/typescript', async () => {
+  it('Validate eslint-config-ants/typescript', async () => {
     const configPath = './typescript/index.js';
     const filePath = path.join(__dirname, './fixtures/ts.ts');
 
@@ -56,7 +56,7 @@ describe('Validate TS configs', () => {
     assert.ok(reports2.errorCount !== 0 || reports2.warnCount !== 0);
   });
 
-  it('Validate ants-spec-eslint/typescript/vue', async () => {
+  it('Validate eslint-config-ants/typescript/vue', async () => {
     const configPath = './typescript/vue.js';
     const filePath = path.join(__dirname, './fixtures/ts-vue.vue');
 
@@ -93,7 +93,7 @@ describe('Validate TS configs', () => {
     assert.notEqual(errorReportedByTSPlugin.length, 0);
   });
 
-  it('Validate ants-spec-eslint/essential/typescript', async () => {
+  it('Validate eslint-config-ants/essential/typescript', async () => {
     const configPath = './essential/typescript/index.js';
     const filePath = path.join(__dirname, './fixtures/ts.ts');
 
@@ -134,7 +134,7 @@ describe('Validate TS configs', () => {
     assert.equal(styleErrors[0].severity, 1);
   });
 
-  it('Validate ants-spec-eslint/essential/typescript/react', async () => {
+  it('Validate eslint-config-ants/essential/typescript/react', async () => {
     const configPath = './essential/typescript/react.js';
     const filePath = path.join(__dirname, './fixtures/ts-react.tsx');
 
@@ -183,7 +183,7 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate ants-spec-eslint/essential/typescript/vue', async () => {
+  it('Validate eslint-config-ants/essential/typescript/vue', async () => {
     const configPath = './essential/typescript/vue.js';
     const filePath = path.join(__dirname, './fixtures/ts-vue.vue');
 
@@ -222,7 +222,7 @@ describe('Validate TS configs', () => {
     assert.equal(errorReportedByReactPluginBlackList.length, 0);
   });
 
-  it('Validate ants-spec-eslint/typescript/node', async () => {
+  it('Validate eslint-config-ants/typescript/node', async () => {
     const configPath = './typescript/node.js';
     const filePath = path.join(__dirname, './fixtures/ts-node.ts');
 

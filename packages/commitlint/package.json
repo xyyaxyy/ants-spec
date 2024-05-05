@@ -1,5 +1,5 @@
 {
-  "name": "ants-spec-commitlint",
+  "name": "commitlint-config-ants",
   "version": "1.0.0",
   "main": "index.js",
   "description": "ants Git规范",

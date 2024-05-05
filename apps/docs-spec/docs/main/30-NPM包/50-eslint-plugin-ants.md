@@ -1,5 +1,5 @@
 ---
-title: ants-spec-eslint-plugin
+title: eslint-plugin-ants
 categories:
   - 工程规范
 tags:
@@ -9,12 +9,12 @@ author:
   link: https://github.com/xyyaxyy/ants-spec
 ---
 
-# ants-spec-eslint-plugin
+# eslint-plugin-ants
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install ants-spec-eslint-plugin eslint --save-dev
+$ npm install eslint-plugin-ants eslint --save-dev
 ```
 
 ## 使用
@@ -24,9 +24,9 @@ $ npm install ants-spec-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['ants-spec-eslint'],
+  plugin: ['eslint-config-ants'],
   rules: {
-    'ants-spec-eslint-plugin/no-secret-info': 'error',
+    'eslint-plugin-ants/no-secret-info': 'error',
   },
 };
 ```
@@ -36,7 +36,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:ants-spec-eslint-plugin/recommended',
+  extends: 'plugin:eslint-plugin-ants/recommended',
 };
 ```
 

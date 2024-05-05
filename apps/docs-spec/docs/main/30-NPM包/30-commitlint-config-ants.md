@@ -1,5 +1,5 @@
 ---
-title: ants-spec-commitlint
+title: commitlint-config-ants
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/xyyaxyy/ants-spec
 ---
 
-# ants-spec-commitlint
+# commitlint-config-ants
 
 :::tip
 ants Git 规范
@@ -22,7 +22,7 @@ ants Git 规范
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install ants-spec-commitlint @commitlint/cli --save-dev
+npm install commitlint-config-ants @commitlint/cli --save-dev
 ```
 
 ## 使用
@@ -31,7 +31,7 @@ npm install ants-spec-commitlint @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['ants-spec-commitlint'],
+  extends: ['commitlint-config-ants'],
 };
 ```
 

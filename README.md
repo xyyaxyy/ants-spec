@@ -46,11 +46,11 @@ ants 前端编码规范工程化
 
 | 规范                                                              | Lint 工具                                                      | NPM 包                                                                           |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [ants-spec-eslint](https://www.npmjs.com/package/ants-spec-eslint)               |
-| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [ants-spec-stylelint](https://www.npmjs.com/package/ants-spec-stylelint)         |
-| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [ants-spec-commitlint](https://www.npmjs.com/package/ants-spec-commitlint)       |
-| 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [ants-spec-markdownlint](https://www.npmjs.com/package/ants-spec-markdownlint)   |
-| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [ants-spec-eslint-plugin](https://www.npmjs.com/package/ants-spec-eslint-plugin) |
+| JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [eslint-config-ants](https://www.npmjs.com/package/eslint-config-ants)               |
+| CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [stylelint-config-ants](https://www.npmjs.com/package/stylelint-config-ants)         |
+| Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                     | [commitlint-config-ants](https://www.npmjs.com/package/commitlint-config-ants)       |
+| 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [markdownlint-config-ants](https://www.npmjs.com/package/markdownlint-config-ants)   |
+| Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [eslint-plugin-ants](https://www.npmjs.com/package/eslint-plugin-ants) |
 
 [ants-lint-cli](https://www.npmjs.com/package/ants-lint-clit) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 

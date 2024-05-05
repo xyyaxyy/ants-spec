@@ -1,4 +1,4 @@
-# ants-spec-markdownlint
+# markdownlint-config-ants
 
 > ants 文档规范
 
@@ -9,8 +9,8 @@
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install ants-spec-markdownlint markdownlint --save-dev
-pnpm add ants-spec-markdownlint markdownlint -D
+npm install markdownlint-config-ants markdownlint --save-dev
+pnpm add markdownlint-config-ants markdownlint -D
 ```
 
 ## 使用
@@ -19,6 +19,6 @@ pnpm add ants-spec-markdownlint markdownlint -D
 
 ```json
 {
-  "extends": "ants-spec-markdownlint"
+  "extends": "markdownlint-config-ants"
 }
 ```

@@ -1,5 +1,5 @@
 ---
-title: ants-spec-stylelint
+title: stylelint-config-ants
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/xyyaxyy/ants-spec
 ---
 
-# ants-spec-stylelint
+# stylelint-config-ants
 
 :::tip
 ants CSS 规范
@@ -22,7 +22,7 @@ ants CSS 规范
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install ants-spec-stylelint stylelint stylelint-scss --save-dev
+npm install stylelint-config-ants stylelint stylelint-scss --save-dev
 ```
 
 ## 使用
@@ -31,6 +31,6 @@ npm install ants-spec-stylelint stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "ants-spec-stylelint"
+  "extends": "stylelint-config-ants"
 }
 ```

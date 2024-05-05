@@ -1,5 +1,5 @@
 ---
-title: ants-spec-markdownlint
+title: markdownlint-config-ants
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/xyyaxyy/ants-spec
 ---
 
-# ants-spec-markdownlint
+# markdownlint-config-ants
 
 :::tip
 ants 文档 规范
@@ -22,7 +22,7 @@ ants 文档 规范
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install ants-spec-markdownlint markdownlint --save-dev
+npm install markdownlint-config-ants markdownlint --save-dev
 ```
 
 ## 使用
@@ -31,6 +31,6 @@ npm install ants-spec-markdownlint markdownlint --save-dev
 
 ```json
 {
-  "extends": "ants-spec-markdownlint"
+  "extends": "markdownlint-config-ants"
 }
 ```

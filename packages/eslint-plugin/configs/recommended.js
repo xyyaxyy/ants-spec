@@ -1,7 +1,7 @@
 module.exports = {
-  plugins: ['ants-spec-eslint-plugin'],
+  plugins: ['eslint-plugin-ants'],
   rules: {
-    'ants-spec-eslint-plugin/no-http-url': 'warn',
-    'ants-spec-eslint-plugin/no-secret-info': 'error',
+    'eslint-plugin-ants/no-http-url': 'warn',
+    'eslint-plugin-ants/no-secret-info': 'error',
   },
 };

@@ -143,16 +143,16 @@ importers:
       '@typescript-eslint/parser':
         specifier: ^5.0.0
         version: 5.62.0(eslint@8.57.0)(typescript@4.9.5)
-      ants-spec-commitlint:
+      commitlint-config-ants:
         specifier: latest
         version: link:../commitlint
-      ants-spec-eslint:
+      eslint-config-ants:
         specifier: latest
         version: link:../eslint
-      ants-spec-markdownlint:
+      markdownlint-config-ants:
         specifier: latest
         version: link:../markdownlint
-      ants-spec-stylelint:
+      stylelint-config-ants:
         specifier: latest
         version: link:../stylelint
       chalk:

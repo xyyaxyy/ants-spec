@@ -1,5 +1,5 @@
 {
-  "name": "ants-spec-eslint",
+  "name": "eslint-config-ants",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

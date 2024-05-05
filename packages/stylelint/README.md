@@ -1,4 +1,4 @@
-# ants-spec-stylelint
+# stylelint-config-ants
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
 
@@ -7,8 +7,8 @@
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install ants-spec-stylelint stylelint stylelint-scss --save-dev
-pnpm add ants-spec-stylelint stylelint stylelint-scss -D
+npm install stylelint-config-ants stylelint stylelint-scss --save-dev
+pnpm add stylelint-config-ants stylelint stylelint-scss -D
 ```
 
 ## 使用
@@ -17,6 +17,6 @@ pnpm add ants-spec-stylelint stylelint stylelint-scss -D
 
 ```json
 {
-  "extends": "ants-spec-stylelint"
+  "extends": "stylelint-config-ants"
 }
 ```

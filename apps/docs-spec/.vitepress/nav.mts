@@ -40,24 +40,24 @@ export default [
     text: 'NPM包',
     items: [
       {
-        text: 'ants-spec-eslint',
-        link: '/docs/main/30-NPM包/10-ants-spec-eslint.md',
+        text: 'eslint-config-ants',
+        link: '/docs/main/30-NPM包/10-eslint-config-ants.md',
       },
       {
-        text: 'ants-spec-stylelint',
-        link: '/docs/main/30-NPM包/20-ants-spec-stylelint.md',
+        text: 'stylelint-config-ants',
+        link: '/docs/main/30-NPM包/20-stylelint-config-ants.md',
       },
       {
-        text: 'ants-spec-commitlint',
-        link: '/docs/main/30-NPM包/30-ants-spec-commitlint.md',
+        text: 'commitlint-config-ants',
+        link: '/docs/main/30-NPM包/30-commitlint-config-ants.md',
       },
       {
-        text: 'ants-spec-markdownlint',
-        link: '/docs/main/30-NPM包/40-ants-spec-markdownlint.md',
+        text: 'markdownlint-config-ants',
+        link: '/docs/main/30-NPM包/40-markdownlint-config-ants.md',
       },
       {
-        text: 'ants-spec-eslint-plugin',
-        link: '/docs/main/30-NPM包/50-ants-spec-eslint-plugin.md',
+        text: 'eslint-plugin-ants',
+        link: '/docs/main/30-NPM包/50-eslint-plugin-ants.md',
       },
     ],
   },

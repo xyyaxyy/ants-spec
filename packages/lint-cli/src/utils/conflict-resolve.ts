@@ -27,8 +27,7 @@ const packagePrefixesToRemove = [
   'eslint-',
   'stylelint-',
   'markdownlint-',
-  'commitlint-',
-  'ants-spec-'
+  'commitlint-'
 ];
 
 /**

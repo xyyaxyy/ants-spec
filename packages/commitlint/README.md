@@ -1,4 +1,4 @@
-# ants-spec-commitlint
+# commitlint-config-ants
 
 > ants Git 提交规范
 
@@ -9,8 +9,8 @@
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install ants-spec-commitlint @commitlint/cli --save-dev
-pnpm add ants-spec-commitlint @commitlint/cli -D
+npm install commitlint-config-ants @commitlint/cli --save-dev
+pnpm add commitlint-config-ants @commitlint/cli -D
 ```
 
 ## 使用
@@ -19,7 +19,7 @@ pnpm add ants-spec-commitlint @commitlint/cli -D
 
 ```javascript
 module.exports = {
-  extends: ["ants-spec-commitlint"],
+  extends: ["commitlint-config-ants"],
 };
 ```
 

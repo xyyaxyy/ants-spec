@@ -1,5 +1,5 @@
 {
-  "name": "ants-spec-markdownlint",
+  "name": "markdownlint-config-ants",
   "version": "1.0.0",
   "main": "index.json",
   "description": "ants 文档规范",

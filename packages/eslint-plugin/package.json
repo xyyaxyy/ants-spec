@@ -1,5 +1,5 @@
 {
-  "name": "ants-spec-eslint-plugin",
+  "name": "eslint-plugin-ants",
   "version": "1.0.0",
   "description": "ants-自定义eslint插件",
   "main": "index.js",
