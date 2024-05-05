@@ -1,6 +1,6 @@
 module.exports = {
   defaultSeverity: 'warning',
-  plugins: ['stylelint-scss', 'stylelint-order'],
+  plugins: ['stylelint-scss'],
   rules: {
     /**
      * Possible errors
