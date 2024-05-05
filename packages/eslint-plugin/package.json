@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ants",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "ants-自定义eslint插件",
   "main": "index.js",
   "files": [
