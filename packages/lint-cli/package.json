@@ -22,7 +22,8 @@
     "build": "rm -rf lib && npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "test": "npm run build && jest",
-    "coverage": "nyc jest --silent --forceExit"
+    "coverage": "nyc jest --silent --forceExit",
+    "prepublishOnly": "npm run test"
   },
   "dependencies": {
     "@babel/core": "^7.16.0",
