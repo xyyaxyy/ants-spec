@@ -25,24 +25,6 @@ importers:
         specifier: ^0.34.0
         version: 0.34.0
 
-  apps/docs-ants:
-    devDependencies:
-      ants-spec-commitlint:
-        specifier: workspace:^
-        version: link:../../packages/commitlint
-      ants-spec-eslint:
-        specifier: workspace:^
-        version: link:../../packages/eslint
-      ants-lint-cli:
-        specifier: workspace:^
-        version: link:../../packages/lint-cli
-      ants-spec-markdownlint:
-        specifier: workspace:^
-        version: link:../../packages/markdownlint
-      ants-spec-stylelint:
-        specifier: workspace:^
-        version: link:../../packages/stylelint
-
   apps/docs-spec:
     dependencies:
       directory-tree:
@@ -162,16 +144,16 @@ importers:
         specifier: ^5.0.0
         version: 5.62.0(eslint@8.57.0)(typescript@4.9.5)
       ants-spec-commitlint:
-        specifier: workspace:^
+        specifier: latest
         version: link:../commitlint
       ants-spec-eslint:
-        specifier: workspace:^
+        specifier: latest
         version: link:../eslint
       ants-spec-markdownlint:
-        specifier: workspace:^
+        specifier: latest
         version: link:../markdownlint
       ants-spec-stylelint:
-        specifier: workspace:^
+        specifier: latest
         version: link:../stylelint
       chalk:
         specifier: ^4.1.0
