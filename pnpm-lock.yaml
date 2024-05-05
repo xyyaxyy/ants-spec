@@ -33,7 +33,7 @@ importers:
       ants-spec-eslint:
         specifier: workspace:^
         version: link:../../packages/eslint
-      ants-spec-lint-cli:
+      ants-lint-cli:
         specifier: workspace:^
         version: link:../../packages/lint-cli
       ants-spec-markdownlint:

@@ -9,7 +9,7 @@ import { PKG_NAME, PKG_VERSION } from '../utils/constants';
  */
 const checkLatestVersion = async (): Promise<string | null> => {
   const npm = await npmType;
-  // pnpm view ants-spec-lint-cli version 该命令可以获取最新版本号
+  // pnpm view ants-lint-cli version 该命令可以获取最新版本号
   const latestVersion = execSync(`${npm} view ${PKG_NAME} version`).toString('utf-8').trim();
 
   // 如果当前版本就是最新版本，则直接返回

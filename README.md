@@ -52,9 +52,9 @@ ants 前端编码规范工程化
 | 文档规范                                                          | [markdownlint](https://github.com/DavidAnson/markdownlint)     | [ants-spec-markdownlint](https://www.npmjs.com/package/ants-spec-markdownlint)   |
 | Eslint 插件                                                       | [ESlint Plugin](https://eslint.org/docs/latest/extend/plugins) | [ants-spec-eslint-plugin](https://www.npmjs.com/package/ants-spec-eslint-plugin) |
 
-[ants-spec-lint-cli](https://www.npmjs.com/package/ants-spec-lint-clit) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+[ants-lint-cli](https://www.npmjs.com/package/ants-lint-clit) 收敛屏蔽了上述依赖和配置细节，提供简单的 `CLI` 和 `Node.js API`，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
-您可以使用[ants-spec-lint-cli](https://www.npmjs.com/package/ants-spec-lint-cli) 方便地为项目接入全部规范。
+您可以使用[ants-lint-cli](https://www.npmjs.com/package/ants-lint-cli) 方便地为项目接入全部规范。
 
 </br>
 

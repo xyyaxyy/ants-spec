@@ -64,7 +64,7 @@ export default (results: ScanResult[], fix: boolean): void => {
 
   // 扫描日志，预期:
   // ✖ x problems (y errors, z warnings)
-  // y error and z warnings potentially fixable with the `ants-spec-lint-cli fix`
+  // y error and z warnings potentially fixable with the `ants-lint-cli fix`
   //
   // ✔ no problems
   if (!fix && total > 0) {
