@@ -26,47 +26,47 @@ export const PKG_VERSION: string = pkg.version;
  */
 export const PROJECT_TYPES: Array<{ name: string; value: string }> = [
   {
-    name: '未使用 React、Vue、Node.js 的项目（JavaScript）',
+    name: '[JavaScript] not a React | Vue | NodeJS project',
     value: 'index',
   },
   {
-    name: '未使用 React、Vue、Node.js 的项目（TypeScript）',
+    name: '[TypeScript] not a React | Vue | NodeJS project',
     value: 'typescript',
   },
   {
-    name: 'React 项目（JavaScript）',
+    name: 'React + JavaScript',
     value: 'react',
   },
   {
-    name: 'React 项目（TypeScript）',
+    name: 'React + TypeScript',
     value: 'typescript/react',
   },
   {
-    name: 'Rax 项目（JavaScript）',
-    value: 'rax',
-  },
-  {
-    name: 'Rax 项目（TypeScript）',
-    value: 'typescript/rax',
-  },
-  {
-    name: 'Vue 项目（JavaScript）',
+    name: 'Vue + JavaScript',
     value: 'vue',
   },
   {
-    name: 'Vue 项目（TypeScript）',
+    name: 'Vue + TypeScript',
     value: 'typescript/vue',
   },
   {
-    name: 'Node.js 项目（JavaScript）',
+    name: 'Rax + JavaScript',
+    value: 'rax',
+  },
+  {
+    name: 'Rax + TypeScript',
+    value: 'typescript/rax',
+  },
+  {
+    name: 'NodeJS + JavaScript',
     value: 'node',
   },
   {
-    name: 'Node.js 项目（TypeScript）',
+    name: 'NodeJS + TypeScript',
     value: 'typescript/node',
   },
   {
-    name: '使用 ES5 及之前版本 JavaScript 的老项目',
+    name: 'ES5',
     value: 'es5',
   },
 ];
