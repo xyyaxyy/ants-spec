@@ -6,7 +6,7 @@ exports.rules = requireAll({
   dirname: path.resolve(__dirname, 'rules'),
 });
 
-// 导出配置
+// 导出默认配置
 exports.configs = requireAll({
   dirname: path.resolve(__dirname, 'configs'),
 });
