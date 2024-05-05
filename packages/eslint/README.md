@@ -18,7 +18,8 @@
 
 ```shell
 npm i -D eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-import
-pnpm add eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-import -D
+
+pnpm add -D eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 ### 配置
@@ -47,7 +48,7 @@ pnpm add eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-impor
 ```shell
 npm i -D eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 
-pnpm add eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks -D
+pnpm add -D eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
@@ -62,6 +63,7 @@ pnpm add eslint-config-ants @babel/core @babel/eslint-parser eslint-plugin-impor
 
 ```shell
 npm i -D eslint-plugin-jsx-a11y
+
 pnpm add -D eslint-plugin-jsx-a11y
 ```
 

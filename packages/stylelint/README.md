@@ -8,6 +8,7 @@
 
 ```bash
 npm install stylelint-config-ants stylelint stylelint-scss --save-dev
+
 pnpm add stylelint-config-ants stylelint stylelint-scss -D
 ```
 

@@ -10,6 +10,7 @@
 
 ```bash
 npm install commitlint-config-ants @commitlint/cli --save-dev
+
 pnpm add commitlint-config-ants @commitlint/cli -D
 ```
 

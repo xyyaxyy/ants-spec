@@ -18,21 +18,35 @@
 
 `ants-lint-cli` 收敛屏蔽了这些依赖和配置细节，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
-## CLI 使用
-
-### 安装
+## 安装
 
 在终端执行：
 
 ```bash
 npm install ants-lint-cli -g
+
+# 或者
+
+yarn global add ants-lint-cli
+
+# 或者
+
+pnpm add -g ants-lint-cli
 ```
 
 安装完成后，可执行 `ants-lint-cli -h` 以验证安装成功。
 
-### 使用
+## 使用
 
-#### `ants-lint-cli init`：一键接入
+### 一键接入：
+
+```bash
+ants-lint-cli init
+
+# 或者
+
+npx ants-lint-cli init
+```
 
 在项目根目录执行 `ants-lint-cli init`，即可一键接入规范，为项目安装规范 `Lint` 所需的依赖和配置。
 
@@ -55,7 +69,15 @@ npm install ants-lint-cli -g
 >
 > 注 2：如果项目的 .vscode/ 目录被 .gitignore 忽略，可以在拉取项目后单独执行 `ants-lint-cli init --vscode` 命令写入 `.vscode/extensions.json` 和 `.vscode/settings.json` 配置文件
 
-#### `ants-lint-cli scan`：一键扫描
+### 一键扫描：
+
+```bash
+ants-lint-cli scan
+
+# 或者
+
+npx ants-lint-cli scan
+```
 
 在项目的根目录执行命令，即可扫描项目的规范问题：
 
@@ -70,7 +92,15 @@ npm install ants-lint-cli -g
 >
 > 注 2: `ants-lint-cli` 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是 `ants-lint-cli` 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行 npm i）。若使用项目配置扫描失败，则使用默认配置扫描
 
-#### `ants-lint-cli fix`：一键修复
+### 一键修复：
+
+```bash
+ants-lint-cli fix
+
+# 或者
+
+npx ants-lint-cli fix
+```
 
 在项目的根目录执行命令，即可修复部分规范问题：
 
@@ -81,7 +111,15 @@ npm install ants-lint-cli -g
 
 注意请 review 下修复前后的代码，以免工具误修的情况。
 
-#### `ants-lint-cli commit-file-scan` 提交文件扫描
+### 提交文件扫描：
+
+```bash
+ants-lint-cli commit-file-scan
+
+# 或者
+
+npx ants-lint-cli commit-file-scan
+```
 
 在 git commit 时对提交文件进行规范问题扫描，需配合 git 的 pre-commit 钩子使用。
 
@@ -89,7 +127,15 @@ npm install ants-lint-cli -g
 
 - `-s` `--strict` 严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口
 
-#### `ants-lint-cli commit-msg-scan` 提交信息扫描
+### 提交信息扫描：
+
+```bash
+ants-lint-cli commit-msg-scan
+
+# 或者
+
+npx ants-lint-cli commit-msg-scan
+```
 
 git commit 时对 commit message 的格式进行扫描（使用 commitlint），需配合 [husky](https://www.npmjs.com/package/husky) 的 commit-msg 钩子使用。
 
