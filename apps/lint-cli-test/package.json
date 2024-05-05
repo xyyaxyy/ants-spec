@@ -1,0 +1,22 @@
+{
+  "name": "lint-cli-test",
+  "description": "ants-lint-cli 脚手架测试项目",
+  "scripts": {
+    "ants-lint-cli-scan": "ants-lint-cli scan",
+    "ants-lint-cli-fix": "ants-lint-cli fix"
+  },
+  "files": [],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ants-lint-cli": "workspace:^",
+    "eslint-plugin-ants": "workspace:^"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "ants-lint-cli commit-file-scan",
+      "commit-msg": "ants-lint-cli commit-msg-scan"
+    }
+  }
+}

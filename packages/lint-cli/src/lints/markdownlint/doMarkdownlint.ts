@@ -15,22 +15,31 @@ export interface DoMarkdownlintOptions extends ScanOptions {
 
 export async function doMarkdownlint(options: DoMarkdownlintOptions) {
   let files: string[];
+
   if (options.files) {
     files = options.files.filter((name) => MARKDOWN_LINT_FILE_EXT.includes(extname(name)));
   } else {
-    const pattern = join(
-      options.include,
-      `**/*.{${MARKDOWN_LINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`,
-    );
+    // 这样会获取不到文件！！
+    // const pattern = join(
+    //   options.include,
+    //   `**/*.{${MARKDOWN_LINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`,
+    // );
+
+    // const pattern = `**/*.{${MARKDOWN_LINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`;
+    const pattern = '**/*.md';
+
+    // 过滤掉忽略文件
     files = await fg(pattern, {
       cwd: options.cwd,
       ignore: MARKDOWN_LINT_IGNORE_PATTERN,
     });
   }
+
   const results = await markdownlint.promises.markdownlint({
     ...getMarkdownlintConfig(options, options.pkg, options.config),
     files,
   });
+
   // 修复
   if (options.fix) {
     await Promise.all(

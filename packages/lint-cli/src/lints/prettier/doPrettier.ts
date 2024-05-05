@@ -14,16 +14,15 @@ export async function doPrettier(options: DoPrettierOptions) {
     files = options.files.filter((name) => PRETTIER_FILE_EXT.includes(extname(name)));
   } else {
     // 默认处理所有 .js .jsx .ts .tsx 文件
-    const pattern = join(
-      options.include,
-      `**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`,
-    );
-    // 排除 prettier 忽略的文件
+    const pattern = `**/*.{${PRETTIER_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`
+
+    // 排除 prettier 忽略的文件，通过 fast-glob 工具进行匹配
     files = await fg(pattern, {
       cwd: options.cwd,
       ignore: PRETTIER_IGNORE_PATTERN,
     });
   }
+
   // 处理文件
   await Promise.all(files.map(formatFile));
 }

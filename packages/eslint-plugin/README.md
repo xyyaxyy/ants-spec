@@ -5,31 +5,23 @@
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install eslint-plugin-ants eslint --save-dev
+npm install eslint-plugin-ants eslint --save-dev
 
-$ pnpm add -D eslint-plugin-ants eslint
+pnpm add -D eslint-plugin-ants eslint
 ```
 
 ## 使用
 
-### 引入插件
-
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['eslint-config-ants'],
+  plugin: ['ants'],
   rules: {
-    'eslint-plugin-ants/no-secret-info': 'error',
+    'ants/no-secret-info': 'error',
+    'ants/no-http-url': 'warn',
+    'ants/no-broad-semantic-versioning': 'warn',
+    'ants/no-js-in-ts-project': 'warn',
   },
-};
-```
-
-### 使用 presets
-
-```js
-// .eslintrc.js
-module.exports = {
-  extends: 'plugin:eslint-plugin-ants/recommended',
 };
 ```
 

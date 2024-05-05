@@ -15,10 +15,14 @@ export async function doStylelint(options: DoStylelintOptions) {
   if (options.files) {
     files = options.files.filter((name) => STYLELINT_FILE_EXT.includes(extname(name)));
   } else {
-    const pattern = join(
-      options.include,
-      `**/*.{${STYLELINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`,
-    );
+    // 这样获取不到文件！！
+    // const pattern = join(
+    //   options.include,
+    //   `**/*.{${STYLELINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`,
+    // );
+
+    const pattern = `**/*.{${STYLELINT_FILE_EXT.map((t) => t.replace(/^\./, '')).join(',')}}`;
+    
     files = await fg(pattern, {
       cwd: options.cwd,
       ignore: STYLELINT_IGNORE_PATTERN,

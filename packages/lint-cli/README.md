@@ -6,7 +6,7 @@
 
 我们引入了多个业界流行的 Linter，并根据规范内容定制了规则包，它们包括：
 
-| 规范                                                              | Lint 工具                                                      | NPM 包                                                                           |
+| 规范                                                              | Lint 工具                                                      | npm 包                                                                           |
 | ----------------------------------------------------------------- | -------------------------------------------------------------- | -------------------------------------------------------------------------------- |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                                  | [eslint-config-ants](https://www.npmjs.com/package/eslint-config-ants)               |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                             | [stylelint-config-ants](https://www.npmjs.com/package/stylelint-config-ants)         |
@@ -38,7 +38,7 @@ pnpm add -g ants-lint-cli
 
 ## 使用
 
-### 一键接入：
+### 一键接入
 
 ```bash
 ants-lint-cli init
@@ -69,7 +69,7 @@ npx ants-lint-cli init
 >
 > 注 2：如果项目的 .vscode/ 目录被 .gitignore 忽略，可以在拉取项目后单独执行 `ants-lint-cli init --vscode` 命令写入 `.vscode/extensions.json` 和 `.vscode/settings.json` 配置文件
 
-### 一键扫描：
+### 一键扫描
 
 ```bash
 ants-lint-cli scan
@@ -92,7 +92,7 @@ npx ants-lint-cli scan
 >
 > 注 2: `ants-lint-cli` 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是 `ants-lint-cli` 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行 npm i）。若使用项目配置扫描失败，则使用默认配置扫描
 
-### 一键修复：
+### 一键修复
 
 ```bash
 ants-lint-cli fix
@@ -111,7 +111,7 @@ npx ants-lint-cli fix
 
 注意请 review 下修复前后的代码，以免工具误修的情况。
 
-### 提交文件扫描：
+### 提交文件扫描
 
 ```bash
 ants-lint-cli commit-file-scan
@@ -127,7 +127,7 @@ npx ants-lint-cli commit-file-scan
 
 - `-s` `--strict` 严格模式，对 warn 和 error 问题都卡口，默认仅对 error 问题卡口
 
-### 提交信息扫描：
+### 提交信息扫描
 
 ```bash
 ants-lint-cli commit-msg-scan
